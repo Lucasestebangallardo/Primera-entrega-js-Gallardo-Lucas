@@ -13,6 +13,9 @@ const productos = [{producto: "Zapatillas", precio: 20000},
     {producto: "Medias", precio: 3000},
     {producto: "Campera", precio: 18000}];
 
+    const listaNombres = productos.map(producto => producto.producto)
+console.log(listaNombres);
+alert(`Lista de productos: ${listaNombres }`);
 
 window.onload = iniciar;
 
