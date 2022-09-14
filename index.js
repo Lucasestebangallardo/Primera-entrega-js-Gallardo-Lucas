@@ -79,3 +79,21 @@ function iniciar() {
         mostrarCompra();
     
         }
+
+        const form = document.querySelector("#formulario");
+
+/* evento */
+
+const enviarFormulario = (evento) => {
+    event.preventDefault();
+
+    const {text, email, password} = event.target
+
+    console.log(
+        text.value,
+        email.value,
+        password.value,
+        );
+};
+
+form.addEventListener('submit', enviarFormulario);
